@@ -135,14 +135,14 @@ config.default_prog = { "/bin/zsh", "-l" }
 config.color_scheme = "Srcery (Gogh)"
 config.default_workspace = "dev"
 config.font = wezterm.font("Jetbrains Mono")
-config.font_size = 14.0
+config.font_size = 16.0
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.tab_max_width = 24
 config.show_tab_index_in_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
 config.window_frame = {
-	font_size = 14.0,
+	font_size = 16.0,
 	-- active_titlebar_bg = "#12131d",
 	-- inactive_titlebar_bg = "#1e2030",
 }
