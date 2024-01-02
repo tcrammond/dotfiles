@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export NODE_OPTIONS="--max-old-space-size=8192"
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -162,3 +164,11 @@ source "$HOME/.dotfiles/.config/wezterm/wezterm.sh"
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
+# aliases
+function jester() {
+  yarn jest -u $(dirname $(rg -l "$1" packages))
+}
+
+# fun
+eval "LAT=51.352865 LON=0.322569 weather-bat"
