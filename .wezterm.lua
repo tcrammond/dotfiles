@@ -33,7 +33,7 @@ wezterm.on("gui-startup", function()
 	local dotfiles_tab, dotfiles_pane, dev_window = mux.spawn_window(set_dir("dev", wezterm.home_dir .. "/.dotfiles"))
 	dotfiles_pane:send_text("nvim\n")
 
-	dev_window:gui_window():toggle_fullscreen()
+	-- dev_window:gui_window():toggle_fullscreen()
 
 	dev_window:spawn_tab({
 		cwd = wezterm.home_dir .. "/dev",
