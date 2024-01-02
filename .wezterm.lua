@@ -36,33 +36,25 @@ wezterm.on("gui-startup", function()
 	dev_window:gui_window():toggle_fullscreen()
 
 	dev_window:spawn_tab({
-		cwd = wezterm.home_dir .. "/dev/watercooler-labs/toggl-cli",
-	})
-
-	dev_window:spawn_tab({
-		cwd = wezterm.home_dir .. "/dev/shantanuraj/podcst-web",
-	})
-
-	dev_window:spawn_tab({
-		cwd = wezterm.home_dir .. "/dev/shantanuraj/sraj.me",
+		cwd = wezterm.home_dir .. "/dev",
 	})
 
 	dotfiles_tab:activate()
-
+/*
 	local app_tab, app_pane, work_window =
-		mux.spawn_window(set_dir("REKKI", wezterm.home_dir .. "/dev/rekki/buyer-app"))
+		mux.spawn_window(set_dir("WORK", wezterm.home_dir .. "/dev/work/some-app"))
 	app_pane:send_text("nvim\n")
 
 	app_pane:split({})
 
-	local _, api_pane, _ = work_window:spawn_tab(set_dir("REKKI", wezterm.home_dir .. "/dev/rekki/go"))
+	local _, api_pane, _ = work_window:spawn_tab(set_dir("WORK", wezterm.home_dir .. "/dev/work/another-app"))
 	api_pane:send_text("nvim\n")
 
 	api_pane:split({
-		cwd = wezterm.home_dir .. "/dev/rekki/go",
+		cwd = wezterm.home_dir .. "/dev/work/another-app",
 	})
 
-	app_tab:activate()
+	app_tab:activate()*/
 end)
 
 wezterm.on("update-status", function(window)

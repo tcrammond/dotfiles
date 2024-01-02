@@ -1,7 +1,6 @@
 [user]
-  name = Shantanu Raj
-  email = s@sraj.me
-  signingkey = ~/.ssh/id_git.pub
+  name = Tyler Crammond
+  email = tylerchc92@gmail.com
 [pull]
   rebase = true
 [fetch]
@@ -27,23 +26,23 @@
   algorithm = patience
   relative = true
 [merge]
-  tool = nvim -d
+  # tool = nvim -d
 [mergetool]
-  keepBackup = false
+  # keepBackup = false
 [rebase]
-  autosquash = true
+  # autosquash = true
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
 [gpg]
-  format = ssh
+  # format = ssh
 [commit]
-  gpgsign = true
+  # gpgsign = true
 [tag]
-  gpgsign = true
+  # gpgsign = true
 [gpg "ssh"]
-  allowedSignersFile = ~/.dotfiles/.config/git/authorized_signers
+  # allowedSignersFile = ~/.dotfiles/.config/git/authorized_signers
 [rerere]
-  enabled = true
+  # enabled = true
