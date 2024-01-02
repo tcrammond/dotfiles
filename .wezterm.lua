@@ -40,21 +40,21 @@ wezterm.on("gui-startup", function()
 	})
 
 	dotfiles_tab:activate()
-/*
-	local app_tab, app_pane, work_window =
-		mux.spawn_window(set_dir("WORK", wezterm.home_dir .. "/dev/work/some-app"))
-	app_pane:send_text("nvim\n")
 
-	app_pane:split({})
+	-- local app_tab, app_pane, work_window =
+	-- 	mux.spawn_window(set_dir("WORK", wezterm.home_dir .. "/dev/work/some-app"))
+	-- app_pane:send_text("nvim\n")
 
-	local _, api_pane, _ = work_window:spawn_tab(set_dir("WORK", wezterm.home_dir .. "/dev/work/another-app"))
-	api_pane:send_text("nvim\n")
+	-- app_pane:split({})
 
-	api_pane:split({
-		cwd = wezterm.home_dir .. "/dev/work/another-app",
-	})
+	-- local _, api_pane, _ = work_window:spawn_tab(set_dir("WORK", wezterm.home_dir .. "/dev/work/another-app"))
+	-- api_pane:send_text("nvim\n")
 
-	app_tab:activate()*/
+	-- api_pane:split({
+	-- 	cwd = wezterm.home_dir .. "/dev/work/another-app",
+	-- })
+
+	-- app_tab:activate()
 end)
 
 wezterm.on("update-status", function(window)
@@ -134,7 +134,7 @@ config.initial_rows = 48
 config.default_prog = { "/bin/zsh", "-l" }
 config.color_scheme = "Srcery (Gogh)"
 config.default_workspace = "dev"
-config.font = wezterm.font("Berkeley Mono")
+config.font = wezterm.font("Jetbrains Mono")
 config.font_size = 14.0
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
